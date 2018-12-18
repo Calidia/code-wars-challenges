@@ -10,4 +10,10 @@ public class Metro{
     
     return passengers;
   }
+  
+  public static int countPassengersNew(ArrayList<int[]> stops) {
+	return stops.stream()
+				.mapToInt(x -> x[0] - x[1])
+				.sum();
+  }
 }
