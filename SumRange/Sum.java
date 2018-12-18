@@ -23,7 +23,7 @@ public class Sum{
 		return sum;
 	}
   
-	public int GetSum(int a, int b) {
+	public int GetSumNew(int a, int b) {
        return IntStream.range(Math.min(a, b), Math.max(a, b)).sum();
 	}
 }
